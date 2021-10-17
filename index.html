@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora gráfica</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <div>
-        <canvas id="myChart"></canvas>
-    </div>
+    <section class="graphic-container">
+        <div class="pointChart-graphic">
+            <canvas id="pointChart" width="400" height="400"></canvas>
+        </div>
+        <div class="barChart-graphic">
+            <canvas id="barChart" width="400" height="400"></canvas>
+        </div>
+        <div class="pointChart-input">
+            <input class="input" id="input-x" type="number" placeholder="Ingresar valor del eje X">
+            <input class="input" id="input-y" type="number" placeholder="Ingresar valor del eje Y">
+        </div>
+        <div class="barChart-input">
+            <input class="input" id="input-serie1" type="number" placeholder="valor en X de serie 1">
+            <input class="input" id="input-serie2" type="number" placeholder="valor en X de serie 2">
+            <input class="input" id="input-serie3" type="number" placeholder="valor en X de serie 3">
+            <input class="input" id="input-serie4" type="number" placeholder="valor en X de serie 4">
+            <input class="input" id="input-serie5" type="number" placeholder="valor en X de serie 5">
+        </div>
+        <div class="pointChart-container">
+            <input class="button-graph" type="button" value="graphic" onclick="pointGraphic()">
+            <input class="button-clear" type="button" value="clear" onclick="pointChartClear()">
+        </div>
+        <div class="barChart-container">
+            <input class="button-graph" type="button" value="graphic" onclick="barGraphic()">
+            <input class="button-clear" type="button" value="clear" onclick="barChartClear()">
+        </div>
+    </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./pointChart.js"></script>
+<script src="./barChart.js"></script>
 </html>
