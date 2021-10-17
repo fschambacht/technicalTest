@@ -3,9 +3,9 @@ let data = {
     label: 'valor del punto [X,Y]',
     data: [{
       x: 0,
-      y: 0
+      y: 0,
     }],
-    backgroundColor: 'rgb(255, 99, 132)'
+    backgroundColor: 'rgb(127, 200, 169)'
   }],
 };
 
@@ -22,12 +22,12 @@ const config = {
     },
     scales: {
       x: {
-        min: -100,
-        max: 100,
+        min: -80,
+        max: 80,
       },
       y: {
-        min: -100,
-        max: 100,
+        min: -80,
+        max: 80,
       }
     }
   },
