@@ -84,4 +84,7 @@ function pointGraphic () {
   pointChart.update();
 
   count += 1;
+
+  document.getElementById("input-x").value = "";
+  document.getElementById("input-y").value = "";
 }

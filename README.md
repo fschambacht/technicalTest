@@ -14,13 +14,11 @@ https://fschambacht.github.io/technicalTest/
 
 2. En la parte inferior se encuentran los inputs para ingresar los valores del eje X y el eje Y 
 
-3. Luego de ingresar los valores correspondientes a los ejes X y Y, dar clic en el botón de "Graphic" el cual posicionara el punto en el plano cartesiano 
+3. Luego de ingresar los valores correspondientes a los ejes X y Y, da clic en el botón de "Graphic" el cual posicionara el punto en el plano cartesiano; si deseas graficar un nuevo punto, repite el proceso de este numeral.
 
 4. Si pasas el cursor por el punto podrás visualizar los puntos ingresados. 
 
 5. Para limpiar el plano y los puntos ingresados basta con hacer clic en el botón de "Clear" 
-
-6. Repite el paso 2 y 3 para graficar un nuevo punto 
 
 ## Grafica de barras de 5 series 
 
