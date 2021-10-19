@@ -5,11 +5,11 @@ const data2 = {
   datasets: [{
     label: 'gráfico de barras',
     data: [
-        0,
-        0,
-        0,
-        0,
-        0
+        null,
+        null,
+        null,
+        null,
+        null
     ],
     backgroundColor: [
       'rgba(255, 159, 64, 0.2)',
@@ -72,11 +72,11 @@ function barGraphic () {
   }
   
   barChart.data.datasets[0].data = [
-    serie1 || 0,
-    serie2 || 0,
-    serie3 || 0,
-    serie4 || 0,
-    serie5 || 0
+    serie1 || null,
+    serie2 || null,
+    serie3 || null,
+    serie4 || null,
+    serie5 || null
   ];
     
   barChart.update();
@@ -88,4 +88,14 @@ function barChartClear () {
     const serie3 = document.getElementById("input-serie3").value = "";
     const serie4 = document.getElementById("input-serie4").value = "";
     const serie5 = document.getElementById("input-serie5").value = "";
+
+    barChart.data.datasets[0].data = [
+      serie1 || null,
+      serie2 || null,
+      serie3 || null,
+      serie4 || null,
+      serie5 || null
+    ];
+      
+    barChart.update();
 }
