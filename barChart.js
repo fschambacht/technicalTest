@@ -46,22 +46,46 @@ const config2 = {
     config2
 );
 
-function barGraphic () {
-    barChart.data.datasets[0].data = [
-              document.getElementById("input-serie1").valueAsNumber || 0,
-              document.getElementById("input-serie2").valueAsNumber || 0,
-              document.getElementById("input-serie3").valueAsNumber || 0,
-              document.getElementById("input-serie4").valueAsNumber || 0,
-              document.getElementById("input-serie5").valueAsNumber || 0
-    ];
+function barGraphic () {  
+  const serie1 = document.getElementById("input-serie1").value;
+  const serie2 = document.getElementById("input-serie2").value;
+  const serie3 = document.getElementById("input-serie3").value;
+  const serie4 = document.getElementById("input-serie4").value;
+  const serie5 = document.getElementById("input-serie5").value;
+  
+  switch (true) {
+    case isNaN(serie1):
+      alert(`"${serie1}" no es un valor numerico, por favor ingresa un valor numerico para la serie 1`)
+      break;
+    case isNaN(serie2):
+      alert(`"${serie2}" no es un valor numerico, por favor ingresa un valor numerico para la serie 2`)
+      break;
+    case isNaN(serie3):
+      alert(`"${serie3}" no es un valor numerico, por favor ingresa un valor numerico para la serie 3`)
+      break;
+    case isNaN(serie4):
+      alert(`"${serie4}" no es un valor numerico, por favor ingresa un valor numerico para la serie 4`)
+      break;
+    case isNaN(serie5):
+      alert(`"${serie5}" no es un valor numerico, por favor ingresa un valor numerico para la serie 5`)
+      break;
+  }
+  
+  barChart.data.datasets[0].data = [
+    serie1 || 0,
+    serie2 || 0,
+    serie3 || 0,
+    serie4 || 0,
+    serie5 || 0
+  ];
     
-    barChart.update();
+  barChart.update();
 }
 
 function barChartClear () {
-    document.getElementById("input-serie1").value = "";
-    document.getElementById("input-serie2").value = "";
-    document.getElementById("input-serie3").value = "";
-    document.getElementById("input-serie4").value = "";
-    document.getElementById("input-serie5").value = "";
+    const serie1 = document.getElementById("input-serie1").value = "";
+    const serie2 = document.getElementById("input-serie2").value = "";
+    const serie3 = document.getElementById("input-serie3").value = "";
+    const serie4 = document.getElementById("input-serie4").value = "";
+    const serie5 = document.getElementById("input-serie5").value = "";
 }

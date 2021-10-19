@@ -9,6 +9,7 @@
 </head>
 <body>
     <section class="graphic-container">
+        <h1 class="graphic-title">Calculadora Grafica</h1>
         <div class="pointChart-graphic">
             <canvas id="pointChart" width="400" height="400"></canvas>
         </div>
@@ -16,15 +17,15 @@
             <canvas id="barChart" width="400" height="400"></canvas>
         </div>
         <div class="pointChart-input">
-            <input class="input" id="input-x" type="number" placeholder="Ingresar valor del eje X">
-            <input class="input" id="input-y" type="number" placeholder="Ingresar valor del eje Y">
+            <input class="input" id="input-x" type="text" placeholder="Ingresar valor del eje X">
+            <input class="input" id="input-y" type="text" placeholder="Ingresar valor del eje Y">
         </div>
         <div class="barChart-input">
-            <input class="input" id="input-serie1" type="number" placeholder="valor en X de serie 1">
-            <input class="input" id="input-serie2" type="number" placeholder="valor en X de serie 2">
-            <input class="input" id="input-serie3" type="number" placeholder="valor en X de serie 3">
-            <input class="input" id="input-serie4" type="number" placeholder="valor en X de serie 4">
-            <input class="input" id="input-serie5" type="number" placeholder="valor en X de serie 5">
+            <input class="input" id="input-serie1" type="text" placeholder="valor en X de serie 1">
+            <input class="input" id="input-serie2" type="text" placeholder="valor en X de serie 2">
+            <input class="input" id="input-serie3" type="text" placeholder="valor en X de serie 3">
+            <input class="input" id="input-serie4" type="text" placeholder="valor en X de serie 4">
+            <input class="input" id="input-serie5" type="text" placeholder="valor en X de serie 5">
         </div>
         <div class="pointChart-container">
             <input class="button-graph" type="button" value="Graphic" onclick="pointGraphic()">

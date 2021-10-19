@@ -44,9 +44,21 @@ function pointChartClear () {
 }
 
 function pointGraphic () {
+  const ejeX = document.getElementById("input-x").value;
+  const ejeY = document.getElementById("input-y").value;
+
+  switch (true) {
+    case isNaN(ejeX):
+      alert(`"${ejeX}" no es un valor numerico, por favor ingresa un valor numerico para el eje X`)
+      break;
+    case isNaN(ejeY):
+      alert(`"${ejeY}" no es un valor numerico, por favor ingresa un valor numerico para el eje Y`)
+      break;
+  }
+
   pointChart.data.datasets[0].data = [{
-    x: document.getElementById("input-x").valueAsNumber || 0,
-    y: document.getElementById("input-y").valueAsNumber || 0
+    x: ejeX || 0,
+    y: ejeY || 0
   }];
   
   pointChart.update();
